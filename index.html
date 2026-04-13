@@ -466,8 +466,14 @@
     .quote-section,.seine-section { padding:6rem 2rem; }
     #hero { display:block; }
     .hero-text { padding:7.5rem 2rem 3rem; min-height:auto; }
-    .hero-portrait-wrap { height:132vw; padding-top:0; }
-    .hero-portrait-wrap img { height:100%; object-position:center 10%; }
+    .hero-portrait-wrap { height:auto; padding-top:0; }
+    .hero-portrait-wrap img {
+  position:relative;
+  width:100%;
+  height:auto;
+  object-fit:contain;
+  object-position:center top;
+}
     .hero-portrait-wrap::after { display:none; }
     .hero-col-rule { display:none; }
     .hero-name { font-size:clamp(2.8rem,10vw,3.8rem); }
